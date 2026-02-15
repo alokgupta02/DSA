@@ -1,10 +1,10 @@
 package Array.Traversal;
 
-public class ArrayTraversal {
+public class ArrayTraversalEasy {
 
     public static void main(String[] args) {
-        int[] arr = {4, 66, 2, 1, 65, 8, 7, 9, 6, 85};
-        //int[] arr = {1,2,3,4,5};
+        //int[] arr = {4, 66, 2, 1, 65, 8, 7, 9, 6, 85};
+        int[] arr = {1,2,3,4,5};
 
         //Print All Elements
         for(int a: arr){
@@ -84,14 +84,12 @@ public class ArrayTraversal {
         System.out.printf("array contains duplicate: %s %n", containsDuplicate);
 
         //Check if Array is Sorted (Ascending)
-        boolean isSorted = true;
-
         for(int i = 0; i < arr.length - 1; i++) {
             if(arr[i] > arr[i + 1]) {
-                isSorted = false;
-                break;
+                System.out.println("Is array sorted: false");
+                return;
             }
         }
-        System.out.println("Is array sorted: " + isSorted);
+        System.out.println("Is array sorted: true");
     }
 }

@@ -1,11 +1,9 @@
 package Array;
 
-import java.util.Arrays;
-
-public class Insertion {
+public class InsertionTut {
     int[] arr;
 
-    public Insertion(int size){
+    public InsertionTut(int size){
         arr = new int[size];
         for(int i = 0; i<size;i++){
             arr[i]=Integer.MIN_VALUE;
@@ -26,7 +24,7 @@ public class Insertion {
     }
 
     public static void main(String[] args) {
-        Insertion obj = new Insertion(5);
+        InsertionTut obj = new InsertionTut(5);
         obj.insert(2, 3);
         obj.insert(6, 1);
         obj.insert(2, 3);
