@@ -1,7 +1,6 @@
 package Array.Insertion;
 
-public class InsertInSortedArray {
-
+public class InsertIfNotPresent {
     public static void main(String[] args) {
         int[] arr = new int[5];
 
@@ -11,25 +10,25 @@ public class InsertInSortedArray {
         arr[3] = 40;
 
         int n = 4;
-        int x = 5;
+        int x = 90;
 
         System.out.print("Before insert : ");
         for(int a : arr){
             System.out.print(a +" ");
         }
 
-        // logic
-        int i;
-
-        // Start from last element
-        for(i = n - 1; i >= 0 && arr[i] > x; i--){
-            arr[i + 1] = arr[i];
+        //logic
+        boolean isPresent = false;
+        for(int i = n - 1; i >= 0 ;i--){
+            if(arr[i]==x) {
+                isPresent = true;
+                break;
+            }
         }
 
-        // Insert element
-        // i becomes - 1, cause it has reached the end of the loop
-        System.out.print("\n"+i);
-        arr[i + 1] = x;
+        if(!isPresent)
+            arr[n] = x;
+
 
         System.out.print("\nAfter insert : ");
         for(int a : arr){
