@@ -11,10 +11,12 @@ public class DeleteAtGivenIndex {
                 for(int j = i; j < n-1; j++){
                     arr[j] = arr[j+1];
                 }
+                n--;
                 break;
+
             }
         }
-        n--;
+
 
         for(int i = 0; i < n; i++){
             System.out.print(arr[i] + " ");
