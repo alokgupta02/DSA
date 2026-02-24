@@ -1,4 +1,4 @@
-package Array.Questions;
+package Array.TwoPointer;
 
 public class PalindromeCheck {
 
