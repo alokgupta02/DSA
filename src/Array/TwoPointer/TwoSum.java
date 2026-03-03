@@ -25,13 +25,11 @@ public class TwoSum {
             for (int j = i + 1; j < n; j++) {
                 if (arr[j] <= rem) {
                     if (arr[j] == rem) {
-                        return new int[]{i,j};
+                        return new int[]{i, j};
                     }
                 }
             }
         }
         return new int[]{};
     }
-
-
 }
