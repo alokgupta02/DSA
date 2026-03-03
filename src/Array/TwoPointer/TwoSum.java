@@ -15,20 +15,23 @@ public class TwoSum {
     }
 
     private static int[] findSumIndex(int[] arr, int target) {
+
+        int left = 0;
+        int right = left + 1;
         int n = arr.length;
-        int[] sum = new int[2];
+
         for (int i = 0; i < n; i++) {
             int rem = target - arr[i];
             for (int j = i + 1; j < n; j++) {
                 if (arr[j] <= rem) {
                     if (arr[j] == rem) {
-                        sum[0] = i;
-                        sum[1] = j;
-                        return sum;
+                        return new int[]{i,j};
                     }
                 }
             }
         }
-        return sum;
+        return new int[]{};
     }
+
+
 }
