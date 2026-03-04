@@ -1,3 +1,5 @@
+package Array.TwoPointer;
+
 public class TwoSumSorted {
 
     public static void main(String[] args) {
