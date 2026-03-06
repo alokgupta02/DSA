@@ -24,7 +24,6 @@ public class TwoSumSorted {
             } else if (sum > target) {
                 right--;
             } else {
-                System.out.println(left + " " + right);
                 return new int[]{left, right};
             }
         }
