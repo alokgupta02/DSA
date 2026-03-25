@@ -1,10 +1,10 @@
-package Array.TwoPointer;
+package Array.Pattern.TwoPointer;
 
 public class TwoSumSorted {
 
     public static void main(String[] args) {
 
-        int[] arr = {1, 2, 3, 4, 4, 9};
+        int[] arr = { 1, 2, 3, 4, 4, 9 };
         int target = 12;
 
         twoSum(arr, target);
@@ -24,9 +24,9 @@ public class TwoSumSorted {
             } else if (sum > target) {
                 right--;
             } else {
-                return new int[]{left, right};
+                return new int[] { left, right };
             }
         }
-        return new int[]{};
+        return new int[] {};
     }
 }

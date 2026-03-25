@@ -1,8 +1,8 @@
-package Array.TwoPointer;
+package Array.Pattern.TwoPointer;
 
 public class MoveZeroesToEnd {
     public static void main(String[] args) {
-        int[] arr = {0, 1, 0, 3, 1, 2};
+        int[] arr = { 0, 1, 0, 3, 1, 2 };
         int n = arr.length;
         int j = 0;
 

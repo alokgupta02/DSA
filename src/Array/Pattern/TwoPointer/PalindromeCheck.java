@@ -1,13 +1,13 @@
-package Array.TwoPointer;
+package Array.Pattern.TwoPointer;
 
 public class PalindromeCheck {
 
     public static void main(String[] args) {
 
-        int[] arr = {1, 2, 3, 2, 1};
+        int[] arr = { 1, 2, 3, 2, 1 };
         String str = "A man, a plan, a canal: Panama";
 
-        //System.out.println(isPalindromeInt(arr));
+        // System.out.println(isPalindromeInt(arr));
         System.out.println(isPalindromeString(str));
     }
 
@@ -46,8 +46,7 @@ public class PalindromeCheck {
             }
 
             // Compare lowercase versions
-            if (Character.toLowerCase(s.charAt(left))
-                    != Character.toLowerCase(s.charAt(right))) {
+            if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))) {
                 return false;
             }
 

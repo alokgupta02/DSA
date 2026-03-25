@@ -1,12 +1,11 @@
-package Array.TwoPointer;
+package Array.Pattern.TwoPointer;
 
 public class ReverseArray {
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5};
+        int[] arr = { 1, 2, 3, 4, 5 };
         reverseArray(arr);
     }
-
 
     public static void reverseArray(int[] arr) {
         int left = 0;
@@ -23,7 +22,6 @@ public class ReverseArray {
         for (int a : arr) {
             System.out.print(a + " ");
         }
-
 
     }
 }

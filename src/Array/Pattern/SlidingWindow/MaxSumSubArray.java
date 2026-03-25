@@ -1,4 +1,4 @@
-package Array.SlidingWindow;
+package Array.Pattern.SlidingWindow;
 
 public class MaxSumSubArray {
 

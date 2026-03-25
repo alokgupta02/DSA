@@ -3,17 +3,18 @@
  * Date:10-03-2026
  * Time:21:06
  */
-package Array.TwoPointer;
+package Array.Pattern.TwoPointer;
 
 import java.util.Arrays;
- // https://leetcode.com/problems/squares-of-a-sorted-array/description/
+
+// https://leetcode.com/problems/squares-of-a-sorted-array/description/
 public class SqSortedArr {
 
     public static void main(String[] args) {
-        int[] arr = {2, 4, 5, 7, 9};
-        int[] arr2 = {-3, -2, -1, 4, 7, 9};
+        int[] arr = { 2, 4, 5, 7, 9 };
+        int[] arr2 = { -3, -2, -1, 4, 7, 9 };
 
-        //approachOne(arr);
+        // approachOne(arr);
         approachTwo(arr2);
 
     }

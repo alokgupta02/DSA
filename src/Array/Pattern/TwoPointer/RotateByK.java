@@ -1,4 +1,4 @@
-package Array.TwoPointer;
+package Array.Pattern.TwoPointer;
 
 public class RotateByK {
 
@@ -25,7 +25,7 @@ public class RotateByK {
         k = k % n;
 
         if (k < 0) {
-            k = k + n;  // optional: handle negative rotation
+            k = k + n; // optional: handle negative rotation
         }
 
         // If k becomes 0, no rotation needed
@@ -56,7 +56,7 @@ public class RotateByK {
         k = k % n;
 
         if (k < 0) {
-            k = k + n;  // optional: handle negative rotation
+            k = k + n; // optional: handle negative rotation
         }
 
         // If k becomes 0, no rotation needed
@@ -64,7 +64,7 @@ public class RotateByK {
             return;
         }
 
-        // 1. Reverse first part :  k element
+        // 1. Reverse first part : k element
         reverse(arr, 0, k - 1);
 
         // 3. Reverse second part : n-k element
@@ -75,10 +75,10 @@ public class RotateByK {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5};
+        int[] arr = { 1, 2, 3, 4, 5 };
         int k = 2;
 
-        //rotateRightByK(arr, k);
+        // rotateRightByK(arr, k);
         rotateLeftByK(arr, k);
 
         for (int a : arr)
