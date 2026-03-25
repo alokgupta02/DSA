@@ -6,6 +6,7 @@ public class MaxSumSubArray {
         int[] arr = { 100, 200, 300, 400, 500 };
         int n = arr.length;
         int k = 2;
+
         int sum = 0, ans = 0;
 
         // find first sum
