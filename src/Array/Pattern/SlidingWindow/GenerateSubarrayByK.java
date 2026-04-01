@@ -1,6 +1,6 @@
 package Array.Pattern.SlidingWindow;
 
-public class GetElementsByK {
+public class GenerateSubarrayByK {
     public static void main(String[] args) {
         int[] arr = { 1, 9, 2, 3, 7, 3, 7, 6 };
         int k = 3;

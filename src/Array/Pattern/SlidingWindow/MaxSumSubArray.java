@@ -1,12 +1,13 @@
 package Array.Pattern.SlidingWindow;
 
+// fixed window
 public class MaxSumSubArray {
 
     public static void main(String[] args) {
         int[] arr = { 100, 200, 300, 400, 500 };
         int k = 2;
 
-        //bruteSolution(arr, k);
+        // bruteSolution(arr, k);
         optimalSolution(arr, k);
 
     }
